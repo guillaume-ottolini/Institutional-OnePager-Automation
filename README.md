@@ -9,7 +9,7 @@
 ![Status](https://img.shields.io/badge/Status-Production-success.svg)
 ![Tier](https://img.shields.io/badge/Grade-Institutional-gold.svg)
 ![Architecture](https://img.shields.io/badge/Architecture-Cross--Platform-lightgrey.svg)
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success.svg)](https://ton-lien-streamlit.app)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success.svg)](https://onepager-automation.streamlit.app)
 
 > **Author:** Guillaume OTTOLINI  
 > **Concept:** A high-throughput, quantamental pipeline designed to bridge the gap between raw market data and institutional-grade investment thesis generation.  
