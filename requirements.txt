@@ -1,23 +1,12 @@
-# --- CORE UI & UX ---
-streamlit==1.54.0
-streamlit-searchbox==0.1.24
-
-# --- ANALYTICAL ENGINES ---
-numpy==2.3.4
-pandas==2.3.3
-python-dotenv==1.1.1
-yfinance==0.2.58
-
-# --- AI INFRASTRUCTURE ---
-google-genai==1.65.0
-
-# --- VISUALIZATION & PDF ENGINE ---
-matplotlib==3.10.8
-reportlab==4.4.10
-seaborn==0.13.2
-
-# --- UTILITIES ---
-beautifulsoup4==4.14.2
-lxml==5.4.0
-requests==2.32.5
-requests-cache==1.2.1
+streamlit
+streamlit-searchbox
+pandas
+numpy
+python-dotenv
+yfinance
+google-genai
+matplotlib
+reportlab
+seaborn
+beautifulsoup4
+lxml
