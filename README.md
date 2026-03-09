@@ -112,10 +112,11 @@ To maintain academic and professional rigor, the system is continually evolving.
 
 ## 📧 Contact & Technical Inquiries
 
-I am currently open to opportunities in **Equity Research, Sales & Trading, Structuring, or Quantitative Analysis** where software engineering and financial modeling can be leveraged to generate Alpha and automate workflows. 
+Currently pursuing an M1 in Finance at Rennes School of Business with an exchange at UC3M, I am seeking a **6-month internship in Market Finance** (Equity Research, Sales & Trading) starting in **July 2026**. 
+
+My approach is **Quantamental**: I bridge traditional financial modeling with **Python-driven automation**. By developing data pipelines and integrating AI, I build tools to automate fundamental analysis, scale investment research, and **optimize Front-Office workflows** to support Alpha generation.
 
 For a live demonstration of the pipeline, access to the private backend repository, or professional inquiries, please reach out:
 
 * **LinkedIn:** [Guillaume OTTOLINI](https://www.linkedin.com/in/guillaume-ottolini/)
 * **Email:** [guillaume.ottolini@rennes-sb.com](mailto:guillaume.ottolini@rennes-sb.com)
-* **Academic Background:** MiM Student at Rennes School of Business (RSB) / Erasmus Exchange Student at Universidad Carlos III de Madrid (UC3M)
