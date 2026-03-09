@@ -35,7 +35,7 @@ While the public Streamlit UI is designed for single-ticker lookups, the private
 * **Resiliency & "Anti-Crash" Systems:** Implements strict fallback loops, dynamic request caching, and API rate-limit firewalls to ensure the pipeline remains unbroken during massive batch runs.
 * **Thread Safety:** Leverages `concurrent.futures` and global Mutex locking to prevent memory leaks or data overlapping between different equities in concurrent environments.
 
-#### Execution Logs (S&P 500 Run)
+### Execution Logs (S&P 500 Run)
 ![Batch Processing Logs](assets/batch_logs.png)
 
 ---
