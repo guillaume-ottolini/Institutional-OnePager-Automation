@@ -92,7 +92,7 @@ The backend is strictly decoupled into specialized "Engines" to ensure scalabili
 ## 📂 Public Repository Structure
 
     OnePager-Public/
-    │
+    ├── assets/                   # 🖼️ Visual branding, performance logs and showcase images
     ├── examples/                 # 📄 High-resolution generated PDFs (LVMH, NVDA, etc.)
     ├── app_demo.py               # 🖥️ UI structural preview (Frontend architecture only)
     └── README.md                 # 📖 Project documentation and roadmap
