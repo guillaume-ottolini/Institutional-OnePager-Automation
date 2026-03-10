@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo_rsb.png" width="150">
+  <img src="assets/logo_rsb.png" width="135">
 </p>
 
 # OnePager: Institutional Equity Research Automation
@@ -16,6 +16,8 @@
 > 
 > 🖥️ **Live Interactive Terminal:** A hosted version of the UI is available for technical review. It requires a personal Gemini API key and an Institutional Access Code ("RSB2026"). *Note: To protect proprietary valuation models, the live application simulates the pipeline orchestration and outputs a placeholder PDF. Please see the `examples/` directory for actual generated reports.*
 
+---
+
 ## 🎥 System Demonstration
 The GIF below demonstrates the 30-second workflow: 
 1. **Secure API Ingestion** (User-provided Gemini Key).
@@ -24,10 +26,28 @@ The GIF below demonstrates the 30-second workflow:
 
 ![App Demo](assets/app_demo.gif)
 
+---
+
 ## 🔒 Repository Notice & Scalability
 > **Please Note:** To protect the proprietary logic, algorithmic guardrails, and AI sanitization loops designed for this pipeline, this repository serves as a **functional showcase**. The full backend source code (Data Engines, Mutex Orchestration, ML Models) is kept in a private repository and is available for institutional review or technical recruitment rounds upon request. 
 
-### ⚡ Massive Batch Processing & Stress Testing
+---
+
+## 📄 Sample Output: The Institutional OnePager
+*Automated PDF rendering generated in under 30 seconds. Features dynamic typography scaling, dual-axis financial charting, and deterministic AI synthesis.*
+
+<p align="center">
+  <a href="examples/OnePager_LVMH.pdf" target="_blank">
+    <img src="assets/sample_report.png" alt="Institutional OnePager Sample" width="800" style="border: 1px solid #E6E6E6; border-radius: 5px; transition: transform 0.3s;">
+  </a>
+</p>
+<p align="center">
+  <i>(Click the image above to view the full, high-resolution A4 PDF)</i>
+</p>
+
+---
+
+## ⚡ Massive Batch Processing & Stress Testing
 While the public Streamlit UI is designed for single-ticker lookups, the private backend is engineered for high-frequency parallel execution.
 
 * **S&P 500 Benchmark:** An end-to-end stress test generating complete PDF reports (Data ingestion, DCF valuation, AI synthesis, and Vector rendering) for the entire S&P 500 executed in **3,831 seconds (~7.6 seconds per equity)** on standard, resource-constrained hardware (2017 quad-core architecture).
@@ -35,7 +55,7 @@ While the public Streamlit UI is designed for single-ticker lookups, the private
 * **Resiliency & "Anti-Crash" Systems:** Implements strict fallback loops, dynamic request caching, and API rate-limit firewalls to ensure the pipeline remains unbroken during massive batch runs.
 * **Thread Safety:** Leverages `concurrent.futures` and global Mutex locking to prevent memory leaks or data overlapping between different equities in concurrent environments.
 
-#### Execution Logs (S&P 500 Run)
+### Execution Logs (S&P 500 Run)
 ![Batch Processing Logs](assets/batch_logs.png)
 
 ---
@@ -46,7 +66,7 @@ The **OnePager Pipeline** is a specialized financial engineering ecosystem that 
 
 Going far beyond simple data extraction, this architecture orchestrates financial data scraping, Discounted Cash Flow (DCF) modeling, AI-driven qualitative synthesis, dynamic chart generation, and algorithmic PDF compilation. It operates as a massive **Quantamental Scanner**, capable of analyzing and generating professional reports for hundreds of global equities in minutes.
 
-
+---
 
 ## ⚙️ Core System Capabilities (The Architecture)
 
