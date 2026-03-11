@@ -38,7 +38,7 @@ The GIF below demonstrates the 30-second workflow:
 
 <p align="center">
   <a href="examples/OnePager_LVMH.pdf" target="_blank">
-    <img src="assets/sample_report.png" alt="Institutional OnePager Sample" width="800" style="border: 1px solid #E6E6E6; border-radius: 5px; transition: transform 0.3s;">
+    <img src="examples/sample_report.png" alt="Institutional OnePager Sample" width="800" style="border: 1px solid #E6E6E6; border-radius: 5px; transition: transform 0.3s;">
   </a>
 </p>
 <p align="center">
@@ -71,6 +71,18 @@ Going far beyond simple data extraction, this architecture orchestrates financia
 ## ⚙️ Core System Capabilities (The Architecture)
 
 The backend is strictly decoupled into specialized "Engines" to ensure scalability and maximum performance:
+
+<p align="center">
+  <a href="assets/OnePager_System_Architecture_V1.pdf" target="_blank">
+    <img src="assets/OnePager_System_Architecture_V1.png" alt="OnePager System Architecture" width="800" style="border: 1px solid #E6E6E6; border-radius: 5px; transition: transform 0.3s;">
+  </a>
+</p>
+<p align="center">
+  <i>(Click the image above to view the full, high-resolution A4 PDF)</i>
+</p>
+
+### 1. The Quantitative Data Engine
+* **Dynamic Valuation Modeling:** Implements a proprietary multi-stage intrinsic valuation logic with real-time macroeconomic anchoring via live 10-Year Treasury yields (`^TNX`).
 
 ### 1. The Quantitative Data Engine
 * **Dynamic Valuation Modeling:** Implements a proprietary multi-stage intrinsic valuation logic with real-time macroeconomic anchoring via live 10-Year Treasury yields (`^TNX`).
