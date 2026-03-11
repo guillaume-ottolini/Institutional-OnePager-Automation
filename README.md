@@ -14,7 +14,12 @@
 > **Author:** Guillaume OTTOLINI  
 > **Concept:** A high-throughput, quantamental pipeline designed to bridge the gap between raw market data and institutional-grade investment thesis generation.  
 > 
-> 🖥️ **Live Interactive Terminal:** A hosted version of the UI is available for technical review. It requires a personal Gemini API key and an Institutional Access Code ("RSB2026"). *Note: To protect proprietary valuation models, the live application simulates the pipeline orchestration and outputs a placeholder PDF. Please see the `examples/` directory for actual generated reports.*
+> 🖥️ **Live Interactive Terminal** > **[👉 Access the OnePager Live Demo](https://onepager-automation.streamlit.app)** > *Required: Personal Gemini API Key | Access Code: `RSB2026`*. *Note: To protect proprietary valuation models, the live application simulates the pipeline orchestration and outputs a placeholder PDF. Please see the `examples/` directory for actual generated reports.*
+
+### 🔗 Quick Navigation
+
+| [🚀 Live Demo](https://onepager-automation.streamlit.app) | [🏗️ Architecture (PDF)](assets/OnePager_System_Architecture_V1.pdf) | [📄 Sample Report (PDF)](examples/OnePager_LVMH.pdf) | [👤 LinkedIn](https://www.linkedin.com/in/guillaume-ottolini/) |
+| :--- | :--- | :--- | :--- |
 
 ---
 
@@ -24,7 +29,7 @@ The GIF below demonstrates the 30-second workflow:
 2. **Real-time Ticker Discovery** (Global Benchmark Search).
 3. **Automated Pipeline Execution** (Quant Modeling -> AI Synthesis -> PDF Compilation).
 
-![App Demo](assets/app_demo.gif)
+[![App Demo](assets/app_demo.gif)](https://onepager-automation.streamlit.app)
 
 ---
 
@@ -143,7 +148,7 @@ To maintain academic and professional rigor, the system is continually evolving.
 
 ## 📧 Contact & Technical Inquiries
 
-Currently pursuing an M1 in Finance at Rennes School of Business with an exchange at UC3M, I am seeking a **6-month internship in Market Finance** (Equity Research, Sales & Trading) starting in **July 2026**. 
+Currently pursuing an M1 in Finance at Rennes School of Business with an exchange at UC3M, I am seeking a **6-month internship in Market Finance** (Equity Research, Sales & Trading...) starting in **July 2026**. 
 
 My approach is **Quantamental**: I bridge traditional financial modeling with **Python-driven automation**. By developing data pipelines and integrating AI, I build tools to automate fundamental analysis, scale investment research, and **optimize Front-Office workflows** to support Alpha generation.
 
