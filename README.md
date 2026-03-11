@@ -5,11 +5,7 @@
 # OnePager: Institutional Equity Research Automation
 
 ![Python Version](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
-<<<<<<< HEAD
-![License](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)
-=======
 [![License](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](./LICENSE.md)
->>>>>>> b70b943 (Add clickable license badge)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 ![Status](https://img.shields.io/badge/Status-Production-success.svg)
 ![Tier](https://img.shields.io/badge/Grade-Institutional-gold.svg)
