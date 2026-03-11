@@ -29,7 +29,7 @@ The GIF below demonstrates the 30-second workflow:
 ---
 
 ## 🔒 Repository Notice & Scalability
-> **Please Note:** To protect the proprietary logic, algorithmic guardrails, and AI sanitization loops designed for this pipeline, this repository serves as a **functional showcase**. The full backend source code (Data Engines, Mutex Orchestration, ML Models) is kept in a private repository and is available for institutional review or technical recruitment rounds upon request. 
+> **Please Note:** To protect the proprietary logic, algorithmic guardrails, and AI sanitization loops designed for this pipeline, this repository serves as a **functional showcase**. The full backend source code (Data Engines, Mutex Orchestration, Architecture) is kept in a private repository and is available for institutional review or technical recruitment rounds upon request. 
 
 ---
 
