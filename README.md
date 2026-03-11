@@ -5,6 +5,7 @@
 # OnePager: Institutional Equity Research Automation
 
 ![Python Version](https://img.shields.io/badge/Python-3.11%2B-blue.svg)
+![License](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 ![Status](https://img.shields.io/badge/Status-Production-success.svg)
 ![Tier](https://img.shields.io/badge/Grade-Institutional-gold.svg)
@@ -111,6 +112,7 @@ The backend is strictly decoupled into specialized "Engines" to ensure scalabili
     ├── app_demo.py               # 🖥️ UI structural preview (Frontend architecture only)
     ├── packages.txt              # 🐧 OS-level dependencies (Fonts & PDF rendering)
     ├── requirements.txt          # 🐍 Python package dependencies
+    ├── LICENSE.md                # ⚖️ Proprietary & Intellectual Property Notice
     └── README.md                 # 📖 Project documentation and roadmap
 
 ---
