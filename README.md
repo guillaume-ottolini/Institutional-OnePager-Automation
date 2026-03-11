@@ -38,7 +38,7 @@ The GIF below demonstrates the 30-second workflow:
 
 <p align="center">
   <a href="examples/OnePager_LVMH.pdf" target="_blank">
-    <img src="examples/sample_report.png" alt="Institutional OnePager Sample" width="800" style="border: 1px solid #E6E6E6; border-radius: 5px; transition: transform 0.3s;">
+    <img src="assets/sample_report.png" alt="Institutional OnePager Sample" width="800" style="border: 1px solid #E6E6E6; border-radius: 5px; transition: transform 0.3s;">
   </a>
 </p>
 <p align="center">
@@ -83,9 +83,6 @@ The backend is strictly decoupled into specialized "Engines" to ensure scalabili
 
 ### 1. The Quantitative Data Engine
 * **Dynamic Valuation Modeling:** Implements a proprietary multi-stage intrinsic valuation logic with real-time macroeconomic anchoring via live 10-Year Treasury yields (`^TNX`).
-
-### 1. The Quantitative Data Engine
-* **Dynamic Valuation Modeling:** Implements a proprietary multi-stage intrinsic valuation logic with real-time macroeconomic anchoring via live 10-Year Treasury yields (`^TNX`).
 * **Algorithmic Growth Cross-Check:** Validates revenue trajectories against earnings momentum. If historical anomalies are detected, it automatically blends a conservative proxy to prevent broken DCF outputs.
 * **Cross-Asset Normalization:** Automated reconciliation of reporting vs. trading currencies (e.g., $USD/EUR$, $EUR/JPY$) and capital structure reconstruction for global ADRs.
 * **Risk-Aware Guardrails:** Features proprietary non-linear growth decay algorithms and sector-specific WACC floor/cap calibrations to ensure valuation realism across 11 GICS sectors.
@@ -104,9 +101,11 @@ The backend is strictly decoupled into specialized "Engines" to ensure scalabili
 ## 📂 Public Repository Structure
 
     OnePager-Public/
-    ├── assets/                   # 🖼️ Visual branding, performance logs and showcase images
+    ├── assets/                   # 🖼️ Visual branding, main architecture, performance logs...
     ├── examples/                 # 📄 High-resolution generated PDFs (LVMH, NVDA, etc.)
     ├── app_demo.py               # 🖥️ UI structural preview (Frontend architecture only)
+    ├── packages.txt              # 🐧 OS-level dependencies (Fonts & PDF rendering)
+    ├── requirements.txt          # 🐍 Python package dependencies
     └── README.md                 # 📖 Project documentation and roadmap
 
 ---
