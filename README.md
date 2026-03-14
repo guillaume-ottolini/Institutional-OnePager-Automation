@@ -102,6 +102,16 @@ The backend is strictly decoupled into specialized "Engines" to ensure scalabili
 * **Vector Typesetting:** Powered by a custom **ReportLab** implementation featuring an iterative execution loop that calculates text density and dynamically scales font sizes/leading to guarantee perfect A4 boundary adherence.
 * **High-DPI Financial Visualization:** Thread-safe rendering of dual-axis performance charts and peer-group benchmarking with automated outlier management (visually clipping extremes while retaining true data labels).
 
+### 4. Dual-Layer Data Governance & Orchestration
+To optimize latency and minimize API overhead, the pipeline implements a high-efficiency **Multi-Level Caching Architecture**:
+
+* **L1 Cache (Volatile):** Leveraging Streamlit’s memory-based caching for instantaneous UI reactivity during active sessions.
+* **L2 Cache (Persistent):** A structured **SQLite Analytical Warehouse** that archives analytical snapshots.
+* **JSON Object Serialization:** Utilizes binary-to-text JSON serialization to store high-dimensional AI payloads (management teams, geographic breakdowns), ensuring 100% document consistency without redundant LLM calls.
+* **Differential TTL (Time-To-Live) Policy:** * **Market Data:** 24h refresh cycle for price volatility.
+    * **AI Synthesis:** 7-day snapshot retention for qualitative consistency.
+    * **Financial Statements:** 90-day retention aligned with quarterly reporting cycles.
+  
 ---
 
 ## 📂 Public Repository Structure
@@ -122,10 +132,10 @@ The backend is strictly decoupled into specialized "Engines" to ensure scalabili
 The pipeline relies on a robust matrix of modern Python libraries, optimized for institutional finance:
 
 * **Quantitative Data & Matrix Math:** `pandas`, `numpy`, `yfinance`
-* **Optimization & Execution:** `concurrent.futures` (Parallel dispatch), `threading` (Global Mutex locking for API thread safety), `requests_cache`
+* **Optimization & Execution:** `concurrent.futures` (Parallel dispatch), `threading` (Global Mutex locking for API thread safety), `sqlite3` (L2 Persistent Archive), `json` (Payload Serialization).
 * **Artificial Intelligence:** `google-genai` (Structured JSON generation)
 * **Visualization & Document Engineering:** `matplotlib` (Headless 'Agg' backend), `seaborn`, `ReportLab` (Platypus layout engine)
-* **Frontend:** `streamlit`, `streamlit-searchbox`
+* **Frontend:** `streamlit` (L1 Memory-based Caching), `streamlit-searchbox`
 
 ---
 
@@ -134,6 +144,7 @@ The pipeline relies on a robust matrix of modern Python libraries, optimized for
 To maintain academic and professional rigor, the system is continually evolving.
 
 **v2.0 - Infrastructure & AI Independence:**
+* ✅ **Dual-Layer Persistence:** [COMPLETED] Implementation of the SQLite L2 Cache and JSON Payload serialization.
 * 🔄 **Stochastic Modeling:** Implementation of Monte Carlo simulations to generate probability distributions for the DCF intrinsic value.
 * 📡 **Institutional API Migration:** Transitioning the data ingestion layer to institutional endpoints (e.g., Bloomberg B-Pipe, FactSet) for higher fidelity fundamental data.
 * 🔒 **Local LLM Deployment (Privacy-First):** Migration to locally-hosted open-weights models (e.g., Llama 3 / Mistral) to guarantee zero data leakage, meeting strict institutional compliance for proprietary screening.
