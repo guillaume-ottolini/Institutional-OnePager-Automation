@@ -109,7 +109,8 @@ To optimize latency and minimize API overhead, the pipeline implements a high-ef
 * **L1 Cache (Volatile):** Leveraging Streamlit’s memory-based caching for instantaneous UI reactivity during active sessions.
 * **L2 Cache (Persistent):** A structured **SQLite Analytical Warehouse** that archives analytical snapshots.
 * **JSON Object Serialization:** Utilizes binary-to-text JSON serialization to store high-dimensional AI payloads (management teams, geographic breakdowns), ensuring 100% document consistency without redundant LLM calls.
-* **Differential TTL (Time-To-Live) Policy:** * **Market Data:** 24h refresh cycle for price volatility.
+* **Differential TTL (Time-To-Live) Policy:** 
+    * **Market Data:** 24h refresh cycle for price volatility.
     * **AI Synthesis:** 7-day snapshot retention for qualitative consistency.
     * **Financial Statements:** 90-day retention aligned with quarterly reporting cycles.
   
