@@ -8,12 +8,12 @@
 [![License](https://img.shields.io/badge/License-All_Rights_Reserved-red.svg)](./LICENSE.md)
 ![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
 ![Status](https://img.shields.io/badge/Status-Production-success.svg)
-![Tier](https://img.shields.io/badge/Grade-Institutional-gold.svg)
+![Tier](https://img.shields.io/badge/Grade-Professional--Grade-gold.svg)
 ![Architecture](https://img.shields.io/badge/Architecture-Cross--Platform-lightgrey.svg)
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Online-success.svg)](https://onepager-automation.streamlit.app)
 
 > **Author:** Guillaume OTTOLINI  
-> **Concept:** A high-throughput, quantamental pipeline designed to bridge the gap between raw market data and institutional-grade investment thesis generation.  
+> **Concept:** A high-throughput, quantamental pipeline designed to bridge the gap between raw market data and professional-grade investment thesis generation.  
 > 
 > 🖥️ **Live Interactive Terminal** > **[👉 Access the OnePager Live Demo](https://onepager-automation.streamlit.app)** > *Required: Personal Gemini API Key | Access Code: `RSB2026`*. *Note: To protect proprietary valuation models, the live application simulates the pipeline orchestration and outputs a placeholder PDF. Please see the `examples/` directory for actual generated reports.*
 
@@ -138,6 +138,19 @@ The pipeline relies on a robust matrix of modern Python libraries, optimized for
 * **Artificial Intelligence:** `google-genai` (Structured JSON generation)
 * **Visualization & Document Engineering:** `matplotlib` (Headless 'Agg' backend), `seaborn`, `ReportLab` (Platypus layout engine)
 * **Frontend:** `streamlit` (L1 Memory-based Caching), `streamlit-searchbox`
+
+---
+
+## ⚠️ Technical Limitations & Methodology Notes
+
+While **OnePager** is engineered for high-performance batch processing, it is currently subject to the following technical constraints inherent to automated fundamental analysis:
+
+* **Data Source Integrity:** The pipeline currently relies on public feeds (`yfinance`). While resilient, these sources lack the institutional-grade SLA and point-in-time accuracy provided by professional terminals (e.g., Bloomberg, Refinitiv).
+* **Capital Structure Simplification:** The valuation engine assumes a standard capital structure. It does not currently account for complex dual-class share rights, deep-in-the-money dilutive instruments, or complex minority interest reconciliations.
+* **Deterministic Valuation:** The current DCF model is deterministic. Financial modeling is highly sensitive to $WACC$ and Terminal Growth ($g$) assumptions. Therefore, outputs should be viewed as a baseline valuation rather than an absolute price target.
+* **Linear Forecasting & Operating Leverage:** Projected financial metrics (e.g., $EBITDA$ Margin, $ROCE$) are currently modeled as constants based on trailing historical averages or the last reported fiscal year. The system does not yet dynamically account for non-linear operating leverage, economies of scale, or margin compression/expansion during periods of significant revenue volatility. Advanced stochastic forecasting and mean-reversion logic are slated for v2.0.
+* **Sectoral Specificity:** The core engine uses a standard FCF-based valuation. It is currently optimized for Industrial and Tech sectors and may require custom logic for Financials (Banks/Insurance) or Real Estate Investment Trusts (REITs).
+* **AI Synthesis Guardrails:** While the "Golden Rule" logic mitigates hallucinations, the AI synthesis remains a qualitative layer. All generated insights must be cross-referenced with the raw quantitative data provided in the report.
 
 ---
 
